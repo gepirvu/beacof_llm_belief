@@ -1,0 +1,6 @@
+,Query Federation,JDBC Connection,PySpark Data Source
+Governance,"Table-level, via foreign catalog",Connection-level only,Depends how you build it
+Writes,Not supported,Supported,Depends how you build it
+DB coverage,"Oracle, MySQL, Postgres, SQL Server, Snowflake, and more",Anything with a JDBC driver,Anything you code against
+Query pushdown,"Yes, Spark pushes queries down","Yes, filters push down by default",You implement it
+Setup effort,"Low, point at a foreign catalog","Medium, driver JAR, connection, grants","High, you write the connector"
